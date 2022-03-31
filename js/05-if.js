@@ -71,6 +71,18 @@ if (akiuSpalva === 'zalia') {
 }
 }
 
+const temperatura = 25;
+const nuoKadaLaikomeJogSilta = 15;
+const arYraKrituliu = true;
+
+if (arYraKrituliu === true) {
+    console.log('Varyk su mike');
+} else {
+    console.log('Tau reikes kailiniu');
+}
+
+    
+}
 
 /*
 switch () {
