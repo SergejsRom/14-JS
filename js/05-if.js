@@ -3,7 +3,8 @@ IF
 
 sablonai:
 if () {}
-if () {} else []
+if () {} else {}
+if () {} else {} if () {} else {}...if () {} else {}
 
 Palyginimo operatoriai:
     - visi; >, <, <=, >=, !=, ==, ===, !==
@@ -39,6 +40,35 @@ if (a === b) {
     console.log('Alygu B');
 } else {
  console.log('A ne lygu B');
+}
+
+const day = 2
+if (day === 1) {
+    console.log('pirmadienis');
+} else if (day === 2) {
+    console.log('antradienis')
+}
+// ir taip toliau
+
+console.log('------------');
+const akiuSpalva = 'asdf'
+
+if (akiuSpalva === 'zalia') {
+    console.log('Zaliaakiai yra zalciai');
+} else {
+    if (akiuSpalva === 'melyna') {
+        console.log('Melynakiai megsta melynes');
+} else {
+    if (akiuSpalva === 'ruda') {
+        console.log ('Rudaakiai yra melagiai')
+    } else {
+        if (akiuSpalva === 'raudona') {
+            console.log('Turbut programeris');
+        } else {
+            console.log(' O turi akis?');
+        }
+    }
+}
 }
 
 
