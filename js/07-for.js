@@ -16,3 +16,9 @@ for (let i = 0; i < pazymiai.length; i++) {
     console.log('Galutine suma:', suma);
     const vidurkis = suma / pazymiai.length;
     console.log('Vidurkis:', vidurkis);
+
+    console.log('--------------------');
+    for (let i= -80; i<-60; i++){
+        suma +=i;
+        console.log(suma);
+    }
