@@ -73,15 +73,22 @@ if (akiuSpalva === 'zalia') {
 
 const temperatura = 25;
 const nuoKadaLaikomeJogSilta = 15;
-const arYraKrituliu = true;
+const arYraKrituliu = false;
 
-if (arYraKrituliu === true) {
-    console.log('Varyk su mike');
+if (arYraKrituliu) {
+    // siuo metu lija
+    if (temperatura >= nuoKadaLaikomeJogSilta) {
+        console.log('Varyk su maike');    
 } else {
     console.log('Tau reikes kailiniu');
 }
-
-    
+} else {
+    // siuo metu nelija
+    if (temperatura >= nuoKadaLaikomeJogSilta) {
+        console.log('Gali eiti nuogas');     
+    } else {
+        console.log('Be sriukes neapsieisi');
+    }
 }
 
 /*
