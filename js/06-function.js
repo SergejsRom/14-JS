@@ -22,9 +22,11 @@ const ona = [6, 7, 4, 9];
 
 function vidurkis(pazymiuSarasas) {
     let pazymiuSuma = 0;
-    pazymiuSuma += pazymiuSuma[0];
-    pazymiuSuma += pazymiuSuma[1];pazymiuSuma += pazymiuSuma[2];pazymiuSuma += pazymiuSuma[3];
-    return pazymiuSuma;
+    pazymiuSuma += pazymiuSarasas[0];
+    pazymiuSuma += pazymiuSarasas[1];
+    pazymiuSuma += pazymiuSarasas[2];
+    pazymiuSuma += pazymiuSarasas[3];
+    return pazymiuSuma / pazymiuSarasas.length;
 }
 
 const petroVidurkis = vidurkis(petras);
@@ -37,7 +39,7 @@ const jonoVidurkis = vidurkis(jonas);
 console.log('Jonas:', jonoVidurkis);
 
 const onosVidurkis = vidurkis(ona);
-console.log(onosVidurkis);
+console.log('Ona:', onosVidurkis);
 
 /*
 Funkcija gauna varda ir turi grazinti sakini:
